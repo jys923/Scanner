@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.yoon.scanner">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+    <!-- android.permission.READ_CONTACTS -->
+    <!--android:name=".MyApplication"-->
+    <application
+
+        android:name=".kakao.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="54afa48b5d176ec3bc66f233b9df7cac"/>
+
+        <!-- <activity android:name=".MainActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".JoinActivity">
+        </activity>
+        <activity android:name=".AlbumsActivity">
+        </activity>
+        <!-- android:windowSoftInputMode="adjustNothing" -->
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".PhotosActivity">
+        </activity>
+
+        <service
+            android:name=".SyncService"
+            android:enabled="true"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.RESPOND_VIA_MESSAGE"/> -->
+            <!-- </intent-filter> -->
+        </service>
+
+        <activity android:name=".kakao.KakaoSignupActivity">
+        </activity>
+    </application>
+
+</manifest>

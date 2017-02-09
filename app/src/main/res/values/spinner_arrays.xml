@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="server_ip">
+        <item>http://112.161.86.18:63327</item>
+        <item>http://112.161.86.85:63327</item>
+        <item>http://112.161.86.147:63327</item>
+        <item>http://112.161.86.23:63327</item>
+        <item>http://112.161.86.162:63327</item>
+        <item>http://112.161.86.178:63327</item>
+        <item>http://192.168.0.11:63327</item>
+        <item>http://192.168.19.129:63327</item>
+    </string-array>
+</resources>
